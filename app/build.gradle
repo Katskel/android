@@ -20,6 +20,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "versions"
+    productFlavors {
+        development {
+            dimension "versions"
+            versionNameSuffix "-dev"
+        }
+        trunk {
+            dimension "versions"
+        }
+    }
 }
 
 dependencies {
