@@ -30,7 +30,11 @@ android {
             signingConfig signingConfigs.release
             applicationVariants.all { variant ->
                 variant.outputs.all {
-                    def apkName = "androidApp_${defaultConfig.versionName}.apk"
+                    def applicationName = "androidApp"
+                    def versionNameSuffix = (variant.productFlavors[0].versionNameSuffix == null) ?
+                            "" : variant.productFlavors[0].versionNameSuffix
+                    def apkName = "${applicationName}_${defaultConfig.versionName}" +
+                            "${versionNameSuffix}.apk"
                     outputFileName = apkName
                 }
             }

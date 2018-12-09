@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">androidApp</string>
     <string name="version_name_caption">Version name:</string>
+    <string name="phone_imei_caption">Phone imei:</string>
 </resources>
