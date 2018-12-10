@@ -2,4 +2,11 @@
     <string name="app_name">androidApp</string>
     <string name="version_name_caption">Version name:</string>
     <string name="phone_imei_caption">Phone imei:</string>
+    <string name="no_info">No information</string>
+
+    <string name="read_phone_state_explanation">The permission is needed to get your
+        phone imei.</string>
+    <string name="permission_explanation_dialog_question">Are you sure you don\'t want to
+        give the permission?</string>
+    <string name="permission_explanation_dialog_title">The permission explanation</string>
 </resources>
